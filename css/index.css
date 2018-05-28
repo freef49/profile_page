@@ -1,0 +1,139 @@
+
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Alegreya+Sans:300|Forum|Megrim);
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #fbfbfb;
+}
+h1{
+    font-family: 'Megrim', cursive;
+    font-size: 64px;
+}
+h2{
+    font-family: 'Forum', cursive;
+}
+hr{
+    display: block;
+    margin: 50px 10vw;
+    border-style: inset;
+    border-width: 1px;
+}
+/**************************************************
+BANNER
+**************************************************/
+.banner{
+    color: #000000;
+    padding: 15px;
+    padding-left: 10wv;
+    text-align: center;
+}
+
+/**************************************************
+IMAGE
+**************************************************/
+
+.image{
+    margin: 50px auto;
+}
+
+img{
+    width: 100%;
+    z-index: -1;
+    display: block;
+    position: relative;
+
+}
+
+.image p{
+    margin: 15px 0 20px 0 ;
+}
+#michaelporter{
+    margin-left: -15px;
+    z-index: 5;
+    display:inline-block;
+    background: -moz-linear-gradient(right, rgba(0, 0, 0, 1) 0%, rgba(0,0,0,0)60%); /* FF3.6+ */
+    background: -webkit-linear-gradient(right, rgba(0,0,0,1) 0%,rgba(0,0,0,0)60%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(right, rgba(0,0,0,1) 0%,rgba(0,0,0,0)60%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(right, rgba(0,0,0,1) 0%,rgba(0,0,0,0)60%); /* IE10+ */
+    background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0)60%); /* W3C */
+
+    box-shadow: 15px 15px 5px 0px #999;
+    border: solid black 2px;
+
+}
+
+/**************************************************
+TIMELINE
+**************************************************/
+
+
+/*put a border line on the top of the time line*/
+.timeline_beginning{
+
+}
+
+ul,li{
+    list-style: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+
+/**************************************************
+QUOTEBOX
+**************************************************/
+
+.quote-box{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 10px 20px;
+    border: double black 2px;
+
+    box-shadow: 10px 10px 5px 0 #999;
+
+}
+
+.quote{
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    font-size:28px;
+    letter-spacing: 1px;
+
+}
+/**************************************************
+FOOTER
+**************************************************/
+
+.readmore{
+    margin-bottom: 10px;
+}
+
+/**************************************************
+MEDIA RULES
+**************************************************/
+@media all and (max-width:550px) {
+    .container{
+        width:100%;
+        padding: 15px;
+    }
+}
+@media all and (min-width: 551px){
+    .container{
+        width: 60vw;
+        margin: auto;
+    }
+    .quote-box{
+        width: 80%;
+        display: block;
+        margin: 5vh auto;
+        padding: 10px 20px;
+    }
+    .readmore{
+    margin-bottom: 20px;
+    }
+}
